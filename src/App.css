@@ -28,6 +28,14 @@
   color: #61dafb;
 }
 
+.text {
+  color: #FFF;
+}
+
+.Grid {
+  padding-bottom: 16px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
