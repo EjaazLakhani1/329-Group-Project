@@ -4,6 +4,8 @@ import { styled } from '@mui/material/styles';
 import { map } from 'lodash/fp'
 import { Grid, Paper, Box, Button } from '@material-ui/core';
 import { SECTIONS } from './Constants/App';
+import Question from './Components/Question';
+import { useNavigate } from 'react-router-dom'
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: '#1A2027',
@@ -13,12 +15,18 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-const App = () => {
-  const [page, setPage] = useState(0);
+const Home = () => {
+  const [page, setPage] = useState({
+    topic: '',
+    author: '',
+    id: 0,
+  });
+
+  const navigate = useNavigate();
 
   return (
     <div className="App">
-      {page === 0 ?
+      {page.id === 0 ?
       <>
         <h1>329 Project</h1>
         <Box sx={{ flexGrow: 1 }}>
@@ -28,7 +36,10 @@ const App = () => {
                     <Item>
                       <h1 className="text">{section.topic}</h1>
                       <h3 className="text">{section.author}</h3>
-                      <Button onClick={() => {setPage(section.id)}}>
+                      <Button onClick={() => {
+                        setPage(section)
+                        navigate('/lesson')
+                      }}>
                         <h2 className="text">Start Lesson</h2>
                       </Button>
                     </Item>
@@ -37,10 +48,10 @@ const App = () => {
           ), SECTIONS)}
         </Box>
       </>
-      : <h1>Test</h1>
+      : <Question />
       }
     </div>
   );
 }
 
-export default App;
+export default Home;
