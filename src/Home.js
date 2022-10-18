@@ -4,7 +4,6 @@ import { styled } from '@mui/material/styles';
 import { map } from 'lodash/fp'
 import { Grid, Paper, Box, Button } from '@material-ui/core';
 import { SECTIONS } from './Constants/App';
-import Question from './Components/Question';
 import { useNavigate } from 'react-router-dom'
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -26,7 +25,6 @@ const Home = () => {
 
   return (
     <div className="App">
-      {page.id === 0 ?
       <>
         <h1>329 Project</h1>
         <Box sx={{ flexGrow: 1 }}>
@@ -35,10 +33,10 @@ const Home = () => {
                   <Grid item xs={6}>
                     <Item>
                       <h1 className="text">{section.topic}</h1>
-                      <h3 className="text">{section.author}</h3>
+                      <h2 className="text">{section.author}</h2>
                       <Button onClick={() => {
                         setPage(section)
-                        navigate('/lesson')
+                        navigate(`/lesson/${section.topic}/${section.subtopics[0]}`,{state:{...section}})
                       }}>
                         <h2 className="text">Start Lesson</h2>
                       </Button>
@@ -48,8 +46,6 @@ const Home = () => {
           ), SECTIONS)}
         </Box>
       </>
-      : <Question />
-      }
     </div>
   );
 }
