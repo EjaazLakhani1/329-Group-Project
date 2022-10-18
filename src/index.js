@@ -1,21 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Home from './Home';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter, RouterProvider,
 } from 'react-router-dom'
-import Question from './Components/Question';
+import Lesson from './Components/Lesson';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <Home />
   },
   {
-    path: "/lesson",
-    element: <Question />
+    path: '/lesson/:topic/:subtopic',
+    element: <Lesson />
   }
 ])
 
