@@ -52,7 +52,7 @@ export const SECTIONS = {
   'Auric': {
     'id': 5,
     'topic': 'Web Exploits',
-    'author': 'Colton',
+    'author': 'Auric',
     'image': logo,
     'subtopics': [
       'Wordlists',
