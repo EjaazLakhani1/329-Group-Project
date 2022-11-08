@@ -7,6 +7,7 @@ import {
   createBrowserRouter, RouterProvider,
 } from 'react-router-dom'
 import Lesson from './Components/Lesson';
+import SelectScreen from './SelectScreen';
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,19 @@ const router = createBrowserRouter([
     element: <Home />
   },
   {
+    path: "/lessons",
+    element: <SelectScreen name="Start Lesson" type="lesson" />
+  },
+  {
+    path: "/ctf",
+    element: <SelectScreen name="Start CTF" type="ctf" />
+  },
+  {
     path: '/lesson/:topic/:subtopic',
+    element: <Lesson />
+  },
+  {
+    path: '/ctf/:topic/:subtopic',
     element: <Lesson />
   }
 ])

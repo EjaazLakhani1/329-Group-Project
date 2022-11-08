@@ -31,7 +31,7 @@ const Questions = ({ page, setPage, sectionName }) => {
 
   const onBack = () => {
     page === 0
-      ? navigate('/')
+      ? navigate('/lesson')
       : setPage(page - 1)
   };
 
