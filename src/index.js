@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom'
 import Lesson from './Components/Lesson';
 import SelectScreen from './SelectScreen';
+import CTF from './Components/CTF'
 
 const router = createBrowserRouter([
   {
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/ctf/:topic/:subtopic',
-    element: <Lesson />
+    element: <CTF />
   }
 ])
 

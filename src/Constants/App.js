@@ -1,6 +1,31 @@
 import logo from '../logo.svg'
 import { wordlists } from '../Ejaaz/wordlists';
 
+export const CTF_QUESTIONS = {
+  'Ejaaz': {
+    'question1': {
+      'index': 1,
+      'question': 'This is CTF question 1',
+      'answer': 'test'
+    },
+    'question2': {
+      'index': 2,
+      'question': 'This is CTF question 2',
+      'answer': 'test'
+    },
+    'question3': {
+      'index': 3,
+      'question': 'This is CTF question 3',
+      'answer': 'test'
+    },
+    'question4': {
+      'index': 4,
+      'question': 'This is CTF question 4',
+      'answer': 'test'
+    }
+  }
+}
+
 export const SECTION_CONTENT = {
   'Ejaaz': {
     'id': 1,
@@ -47,6 +72,37 @@ export const SECTION_CONTENT = {
       wordlists,
     ]
   },
+}
+
+export const LESSON_QUESTIONS = {
+  'Ejaaz': {
+    'Wordlists': {
+      'question1': {
+        'index': 1,
+        'question': 'this is question 1',
+        'answer': 'test',
+        'error': false
+      },
+      'question2': {
+        'index': 2,
+        'question': 'this is question 2',
+        'answer': 'test',
+        'error': false
+      },
+    },
+    'Intro to Hashcat': {
+      'question1': {
+        'index': 1,
+        'question': 'this is question 1',
+        'answer': 'test'
+      },
+      'question2': {
+        'index': 2,
+        'question': 'this is question 2',
+        'answer': 'test'
+      },
+    }
+  }
 }
 
 export const PATHS = {

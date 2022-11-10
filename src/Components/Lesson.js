@@ -10,7 +10,8 @@ const useStyles = makeStyles({
   },
   para: {
     marginLeft: 32,
-    marginRight: 32
+    marginRight: 32,
+    whiteSpace: 'break-spaces'
   }
 })
 
@@ -21,7 +22,9 @@ const Lesson = ({ name }) => {
   const [page, setPage] = useState(0);
 
   const sectionName = location.state
-  console.log(location);
+  const author = sectionName.author;
+  const subtopic = sectionName.subtopics[page]
+  
   return (
     <>
       <div className={classes.title}>
@@ -33,7 +36,15 @@ const Lesson = ({ name }) => {
           {sectionName.content.contents[page]}
         </p>
       </div>
-      <Questions page={page} setPage={setPage} sectionName={sectionName} />
+      <div> 
+        <Questions
+          page={page}
+          setPage={setPage}
+          sectionName={sectionName}
+          author={author}
+          subtopic={subtopic}
+        />
+      </div>
     </>
   )
 }
