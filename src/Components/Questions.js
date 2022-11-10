@@ -52,7 +52,7 @@ const Questions = ({
         </>
       ), LESSON_QUESTIONS[author][subtopic] )}
       <Button onClick={onBack}> Back </Button>
-      <Button onClick={onNext} disabled={!isCorrect || disabled}> Next </Button>
+      <Button onClick={onNext} > Next </Button>
     </div>
   )
 }

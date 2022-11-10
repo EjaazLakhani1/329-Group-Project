@@ -16,7 +16,7 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const SelectScreen = ({ name, type }) => {
-  const [setPage] = useState({
+  const [page, setPage] = useState({
     topic: '',
     author: '',
     id: 0,

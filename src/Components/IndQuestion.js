@@ -14,7 +14,7 @@ const IndQuestion = ({questionAnswer}) => {
   // const classes = useStyles();
 
   // const [disabled, setDisabled] = useState(false);
-  const [setIsCorrect] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(false);
   const [error, setError] = useState(false);
   const [answer, setAnswer] = useState('')
 
