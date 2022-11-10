@@ -16,7 +16,7 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const SelectScreen = ({ name, type }) => {
-  const [page, setPage] = useState({
+  const [setPage] = useState({
     topic: '',
     author: '',
     id: 0,
@@ -27,7 +27,10 @@ const SelectScreen = ({ name, type }) => {
   return (
     <div className="App">
       <>
-        <h1>329 Project</h1>
+        <div>
+          <Button onClick={() => navigate('/')} ><h3>Back Home</h3></Button>
+          <h1>329 Project</h1>
+        </div>
         <Box sx={{ flexGrow: 1 }}>
           {map((section) => (
               <Grid container justifyContent="center" alignItems="center" className='Grid'>

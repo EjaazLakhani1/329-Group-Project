@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import { styled } from '@mui/material/styles';
 import { Grid, Paper, Box, Button } from '@material-ui/core';
 import { useNavigate } from 'react-router-dom'
@@ -12,8 +13,22 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-const Home = () => {
+const useStyles = makeStyles({
+  empty: {
+    marginTop: 16,
+    marginLeft: 'auto',
+    marginRight: 'auto'
+  },
+  nw: {
+    display: 'block',
+  },
+  text: {
+    display: 'block'
+  }
+})
 
+const Home = () => {
+  const classes = useStyles();
   const navigate = useNavigate();
 
   return (
@@ -21,8 +36,8 @@ const Home = () => {
       <>
         <h1>329 Project</h1>
         <Box sx={{ flexGrow: 1 }}>
-          <Grid container justifyContent="center" alignItems="center" className='Grid'>
-              <Grid item xs={6}>
+          <Grid container justifyContent="center" alignItems="center" className={classes.nw}>
+              <Grid item xs={4} className={classes.empty}>
                 <Item>
                   <h1 className="text">Lessons</h1>
                   <Button onClick={() => {
@@ -32,12 +47,12 @@ const Home = () => {
                   </Button>
                 </Item>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={4} className={classes.empty}>
                 <Item>
                   <h1 className="text">CTF</h1>
                   <Button onClick={() => {
                     navigate(`/ctf`)
-                  }}>
+                  }} variant="outlined" color="error" >
                     <h2 className="text">Play CTF</h2>
                   </Button>
                 </Item>
