@@ -25,11 +25,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/lesson/:topic/:subtopic',
-    element: <Lesson />
+    element: <Lesson type="lesson" />
   },
   {
-    path: '/ctf/:topic/:subtopic',
-    element: <CTF />
+    path: '/ctf/:topic',
+    element: <CTF type="ctf" />
   }
 ])
 
