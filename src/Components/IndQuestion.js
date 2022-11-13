@@ -38,13 +38,15 @@ const IndQuestion = ({questionAnswer}) => {
   return (
     <>
       <TextField
-        required
-        id="outlined-required"
-        label="Required"
+        id="outlined"
         onChange={(event) => (setAnswer(event.target.value))}
         error={error}
+        required={false}
       />
       <Button onClick={() => { onSubmit(questionAnswer) }}> Submit </Button>
+      {isCorrect && (
+        <h1>Correct</h1>
+      )}
     </>
   )
 }

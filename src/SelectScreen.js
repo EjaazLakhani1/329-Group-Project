@@ -40,7 +40,11 @@ const SelectScreen = ({ name, type }) => {
                       <h2 className="text">{section.author}</h2>
                       <Button onClick={() => {
                         setPage(section)
-                        navigate(`/${type}/${section.paths.topic}/${section.subtopics[0]}`,{state: {...section}})
+                        type === 'lesson' ? (
+                          navigate(`/${type}/${section.paths.topic}/${section.paths.subtopics[0]}`,{state: {...section}})
+                        ) : (
+                          navigate(`/${type}/${section.paths.topic}`,{state: {...section}})
+                        )
                       }}>
                         <h2 className="text">{name}</h2>
                       </Button>
