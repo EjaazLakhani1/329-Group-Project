@@ -32,19 +32,19 @@ export const CTF_QUESTIONS = {
 		question1: {
 			index: 1,
 			question:
-				"Find the flag somewhere in this file (The flag looks like this cpscCTF{text here}). ../Dante/bank.py",
+				"Find the flag somewhere in this file (The flag looks like this cpscCTF{text here}). https://github.com/EjaazLakhani1/329-Group-Project/blob/main/src/Dante/bank.py",
 			answer: "cpscCTF{4lw4y5_ch3ck_50urc3_c0d3}",
 		},
 		question2: {
 			index: 2,
 			question:
-				"Find the flag somewhere in this file (The flag looks like this cpscCTF{text here}). ../Dante/password.py",
+				"Download this file and find the flag somewhere in this file (The flag looks like this cpscCTF{text here}). https://github.com/EjaazLakhani1/329-Group-Project/blob/main/src/Dante/password.py",
 			answer: "cpscCTF{d3c0d1n6_1s_fun}",
 		},
 		question3: {
 			index: 3,
 			question:
-				"Find the flag somewhere in this file (Once you find the text, put cpscCTF{} around it and submit). ../Dante/vault",
+				"Download this file and find the flag somewhere in this file (Once you find the text, put cpscCTF{} around it and submit). https://github.com/EjaazLakhani1/329-Group-Project/blob/main/src/Dante/vault",
 			answer: "cpscCTF{f4ncy_pa5sword}",
 		},
 	},
