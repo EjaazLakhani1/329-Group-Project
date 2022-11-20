@@ -1,0 +1,29 @@
+# Lesson 3
+
+## What Technique Will We Focus On?
+
+We will be focusing on devloper tools which are essential to nearly all types of web exploitation and are immediately avalible through a browser so no extra setup is required.
+
+## Setup
+
+Ensure that you have a stable internet connection. Then simply download any web browser of your choosing. (Chrome is the most simplistic).
+
+## How Do You Perform This Technique?
+
+The first step to use developer tools is actually navigate to the web page on the website that you intend to exploit. This is the page that you believe holds hidden information that you are attempting to reach. Next, you will have to actually open the developer tools console. The easiest way to do this across all browsers and OS’s is to right click on the web page, and then click on the “Inspect option” near the bottom of the pop up menu. After this you will finally see the developer tools console with many different tabs at the top. We will be focusing mainly on the “Elements” and “Sources” tab as they are usually the holders of exploitable informaiton.
+
+## What To Look For
+
+The elements tab contains the html code (discussed in part 1) of the current web page which can be used to find things that arent normally visible on the web page. The most important things to look for in this section are links to other web pages that cant normally be accessed and comments that the developer made that can be exploited. The sources tab contains the actual files and folders that the developer has made which allows for more information to be accessed (css and javascript files are just an example). This is the most vulnurable section for web developers as sensitive folders and files that they forgot to hide can be directly accessed and that information can be retrived. For both of the Elements and Sources tabs, it is important to look thoroughly at each line of code and each folder/file to ensure that you do not miss anything and are able to find the information that you are looking for.
+
+### Question 1
+
+**Which Developer tool section should be looked at to find exploitable files?**
+
+### Question 2
+
+**Which Browser can be used for this technique? (enter letter)**
+**a) Google Chrome**
+**b) Microsoft Edge**
+**c) Firefox**
+**d) All of the above**
