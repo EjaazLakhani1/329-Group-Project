@@ -6,6 +6,13 @@ import {
 	introToAssembly,
 	getStartedInformation,
 } from "../Dante/lessonContent";
+import {
+  intro,
+  basics,
+  homeNetwork,
+  publicWifi,
+  webBrowsing
+} from "../Colton/lessonContent"
 
 export const CTF_QUESTIONS = {
 	Ejaaz: {
@@ -67,7 +74,13 @@ export const SECTION_CONTENT = {
 	},
 	Colton: {
 		id: 3,
-		contents: [wordlists, wordlists, wordlists, wordlists],
+		contents: [
+      intro,
+      basics,
+      homeNetwork,
+      publicWifi,
+      webBrowsing
+    ],
 	},
 	Dante: {
 		id: 4,
@@ -168,7 +181,74 @@ export const LESSON_QUESTIONS = {
 			},
 		},
 	},
-	Colton: {},
+	Colton: {
+		"Basics on the internet": {
+			question1: {
+				index: 1,
+				question:
+					"Which protocol for transferring information on the internet allows for the fastest speed of getting the required data?",
+				answer: "UDP",
+			},
+			question2: {
+				index: 2,
+				question:
+					"What does ISP stand for?",
+				answer: "Internet Service Provider",
+			},
+		},
+		"Home network vulnerabilities": {
+			question1: {
+				index: 1,
+				question:
+					"If your router doesn’t automatically update its firmware, how often should you be updating it yourself?",
+				answer: "monthly",
+			},
+			question2: {
+				index: 2,
+				question:
+					"True or False: Your router comes preconfigured with a strong password for both the wifi network and its router settings",
+				answer: "False",
+			},
+      question3: {
+        index: 3,
+        question: "The latest security protocol for wireless security is WPA_?",
+        answer: "3",
+      }
+		},
+    "Exploits on Public Wifi": {
+			question1: {
+				index: 1,
+				question:
+					" ____ is a type of attack where the attacker gets in between your device and its communication to the internet, allowing them to access the data being transferred (4 letter acronym)",
+				answer: "MITM",
+			},
+			question2: {
+				index: 2,
+				question:
+					"What is the secure version of HTTP?",
+				answer: "HTTPS",
+			},
+		},
+    "Security for web browsing": {
+			question1: {
+				index: 1,
+				question:
+					"Two easy techniques to secure your online presence include installing security oriented browser ____ and configuring browser ____ (alphabetical & separate them with a comma)",
+				answer: "extensions, settings",
+			},
+			question2: {
+				index: 2,
+				question:
+					"DDoS” stands for “distributed _____-of-service",
+				answer: "denial",
+			},
+      question3: {
+        index: 3,
+        question: "A virtual machine can be used to remove the worry of your internet browsing affecting the hardware of your device ",
+        answer: "True",
+      }
+		},
+	},
 	Auric: {},
 };
 
@@ -207,10 +287,11 @@ export const PATHS = {
 		id: 4,
 		topic: "how-to-protect-yourself-on-the-internet",
 		subtopics: [
-			"wordlists",
-			"intro-to-hashcat",
-			"what-are-hashes",
-			"cracking-hashes",
+			"intro",
+			"basics-on-the-internet",
+			"home-network-vulnerabilities",
+			"exploits-on-public-wifi",
+      "security-for-web-browsing"
 		],
 	},
 	Auric: {
@@ -274,10 +355,11 @@ export const SECTIONS = {
 		author: "Colton",
 		image: logo,
 		subtopics: [
-			"Wordlists",
-			"Intro to Hashcat",
-			"What are Hashes",
-			"Cracking Hashes",
+			"Intro",
+			"Basics on the internet",
+			"Home network vulnerabilities",
+      "Exploits on Public Wifi",
+			"Security for web browsing",
 		],
 		paths: PATHS.Colton,
 		content: SECTION_CONTENT.Colton,
