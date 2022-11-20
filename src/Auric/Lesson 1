@@ -1,0 +1,21 @@
+# Lesson 1
+
+## What is a website and how are they made?
+
+A website is a group of connected web pages (individual documents that a browser displays), that performs a specific task or service and is hosted on the internet so that anybody with an internet connection can visit it. Websites are created by programmers usually through three different coding languages: HTML (Allows creators to display words on their webpages), CSS (adds style to the page so that it looks more appealing), Javascript (adds animations, dynamic movement and much more). These three languages work together in order to create a functional, interesting and visually appeasing website. This is the front end of websites. There is also another side to websites which is the back-end, this is simply how data from the website gets stored and allows the website to have features including user accounts and downloadable content.
+
+## How do vulnurable websites Come to be?
+
+Website vulnurabilities are mainly a result of human error when the website is being initially created. As stated above there are two main sides to website development. The majority of easy to exploit vulnurabilities come from the front end where the developer forgets to hide certain sections of their website that are used for storage of passwords,debugging (fixing issues), and other sensitive information. Other frequent causes of vulnurable websites are security misconfigurations which include using previously exploited software on a website and broken authentication (easy to impersionate accounts/steal data from these accounts).
+
+## Why are vulnurable websites dangerous?
+
+The vulnurabilities as described above can allow malicious people such as hackers to exploit these vulnurabilities in order for their own personal gain (mostly monetary gain but can also be simply for emotional gain). Websites that contain sensitive information (addresses, names, phone numbers) about users and that are vulnurable can have all of this information leaked if a hacker is able to exploit the website. This sensitive information can then be sold to third parties for money and this information could put users of the website in jepordy. This is the most severe case but there are also lesser but still serious cases where vulnurabilities such as security misconfigurations (described above), are used in order to completely take down a website which causes the loss of money to the website creators as well as anybody else who gains money from the website (hackers sometimes do this simply for emotional pleasure without any monetary gain).
+
+### Question 1
+
+**What Frontend language is used for animations?**
+
+### Question 2
+
+**What are three examples of sensitive information that websites can conatin?**
