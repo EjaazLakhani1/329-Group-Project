@@ -1,0 +1,32 @@
+# Lesson 2
+
+## Why do Attackers Exploit Websites?
+
+As explained in lesson 1, hackers main exploit websites for monetary gain, happiness/pleasure, or for personal vendattas. Now that the WHY has been explained, we are going to dive into the HOW aka how these hackers actually exploit these websites to extract sensitive information to use.
+
+## What techniques do hackers use for exploitation?
+
+There are three important beginner techniques that we will be going over. They are:
+Developer Tools, Path Traverals, and Brute Force Attacks
+
+### Devloper Tools
+
+This technique involves using browser provided tools to inspect a certain webpages code (HTML, CSS, javascript from section 1), alter this code if possible, and alter the functionality of this code in order to discover content on a website that is not normally visible on a webpage. Developer tools are used most frequently when a hacker knows that the information that they are looking for is hidden on the web page that they are currently looking at (either hidden in code or on the webpage itself but not visible).
+
+### Path Traverals
+
+Path traversals are essentially like following a hidden treasure map to find sensitive information that has been hidden in files and folders related to the website that cannot be normally accessed. These hidden files/folders contain information that is needed for the proper function of websites but can be used to exploit a website if they are found. Path traversals are essentially just specifying a directory after an website address in order to travel to a file or folder that the web developer created and attempted to hide from general users.
+
+### Brute Force Attacks
+
+Brute force attacks are used mainly in finding valid usernames and passwords on websites based off of past informations. During brute force attacks on a login system, hundreds or even thousands of usernames and passwords are attempted on a website in order to attempt to gain access to an account. The usernames and passwords that are tested are ones that are very common and have been breached before. This is because the most common usernames and passwords are the ones most likely to be credentials for accounts on the website that is being attacked.
+
+These techniques help hackers exploit websites with weaker security, and they are simple enough for beginners to learn them and begin with web exploitation themselves (ethically of course). Now we will deep dive into one of these techniques so that you can perfom an attack yourself!
+
+### Question 1
+
+**Which technique would be most useful for attempting to find a hidden file with passwords in it?**
+
+### Quesiton 2
+
+**How should knowledge about these techniques be used? (Ethically or non-Ethically?).**
