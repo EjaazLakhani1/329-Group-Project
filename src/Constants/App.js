@@ -288,13 +288,13 @@ export const LESSON_QUESTIONS = {
 				index: 1,
 				question:
 					"What Frontend language is used for animations?",
-				answer: "CSS",
+				answer: "Javascript",
 			},
 			question2: {
 				index: 2,
 				question:
-					"What are three examples of sensitive information that websites can conatin?",
-				answer: "Internet Service Provider",
+					"What are three examples of sensitive information that websites can conatin? (alphabetic, comme seperated)",
+				answer: "addresses, names, phone numbers",
 			},
 		},
 		"Basic Techniques": {
@@ -302,7 +302,7 @@ export const LESSON_QUESTIONS = {
 				index: 1,
 				question:
 					"Which technique would be most useful for attempting to find a hidden file with passwords in it?",
-				answer: "monthly",
+				answer: "path traversals",
 			},
 			question2: {
 				index: 2,
@@ -316,7 +316,7 @@ export const LESSON_QUESTIONS = {
 				index: 1,
 				question:
 					"Which Developer tool section should be looked at to find exploitable files?",
-				answer: "MITM",
+				answer: "sources",
 			},
 			question2: {
 				index: 2,
