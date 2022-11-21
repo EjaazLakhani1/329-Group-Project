@@ -13,6 +13,11 @@ import {
   publicWifi,
   webBrowsing
 } from "../Colton/lessonContent"
+import {
+  introAuric,
+  basic,
+  deep
+} from "../Auric/lessonContent"
 
 export const CTF_QUESTIONS = {
 	Ejaaz: {
@@ -61,6 +66,44 @@ export const CTF_QUESTIONS = {
       link: 'http://localhost:3000/Dante/vault'
 		},
 	},
+  Auric: {
+		question1: {
+			index: 1,
+			question:
+				"Find the flag in this website. \n",
+			answer: "UnsafeWebsite",
+      hasLink: true,
+      link: 'http://localhost:3000/Auric/Website1/home.html'
+		},
+		question2: {
+			index: 2,
+			question:
+				"Find the flag in this website.\n",
+			answer: "N1C3_S6R1PT1N6",
+      hasLink: true,
+      link: 'http://localhost:3000/Auric/Website2/home.html'
+		},
+		question3: {
+			index: 3,
+			question:
+				"Find the flag in this website. \n ",
+			answer: "S0RC3_0F_A11_3V1L",
+      hasLink: true,
+      link: 'http://localhost:3000/Auric/Website3/home.html'
+		},
+	},
+  Colton: {
+		question1: {
+			index: 1,
+			question: "The latest security protocol for wireless security is WPA_?",
+      answer: "3",
+		},
+		question2: {
+			index: 2,
+			question: "A virtual machine can be used to remove the worry of your internet browsing affecting the hardware of your device ",
+      answer: "True",
+		}
+	},
 };
 
 export const SECTION_CONTENT = {
@@ -93,7 +136,7 @@ export const SECTION_CONTENT = {
 	},
 	Auric: {
 		id: 5,
-		contents: [wordlists, wordlists, wordlists, wordlists],
+		contents: [introAuric, basic, deep],
 	},
 };
 
@@ -209,11 +252,6 @@ export const LESSON_QUESTIONS = {
 					"True or False: Your router comes preconfigured with a strong password for both the wifi network and its router settings",
 				answer: "False",
 			},
-      question3: {
-        index: 3,
-        question: "The latest security protocol for wireless security is WPA_?",
-        answer: "3",
-      }
 		},
     "Exploits on Public Wifi": {
 			question1: {
@@ -241,15 +279,53 @@ export const LESSON_QUESTIONS = {
 				question:
 					"DDoS” stands for “distributed _____-of-service",
 				answer: "denial",
-			},
-      question3: {
-        index: 3,
-        question: "A virtual machine can be used to remove the worry of your internet browsing affecting the hardware of your device ",
-        answer: "True",
-      }
+			}
 		},
 	},
-	Auric: {},
+	Auric: {
+		"Introduction": {
+			question1: {
+				index: 1,
+				question:
+					"What Frontend language is used for animations?",
+				answer: "CSS",
+			},
+			question2: {
+				index: 2,
+				question:
+					"What are three examples of sensitive information that websites can conatin?",
+				answer: "Internet Service Provider",
+			},
+		},
+		"Basic Techniques": {
+			question1: {
+				index: 1,
+				question:
+					"Which technique would be most useful for attempting to find a hidden file with passwords in it?",
+				answer: "monthly",
+			},
+			question2: {
+				index: 2,
+				question:
+					"How should knowledge about these techniques be used? (Ethically or non-Ethically?).",
+				answer: "Ethically",
+      }
+		},
+    "Deep Dive into Dev Tools": {
+			question1: {
+				index: 1,
+				question:
+					"Which Developer tool section should be looked at to find exploitable files?",
+				answer: "MITM",
+			},
+			question2: {
+				index: 2,
+				question:
+					"Which Browser can be used for this technique? (enter letter)\na) Google Chrome\nb) Microsoft Edge\nc) Firefox**\nd) All of the above**",
+				answer: "d",
+			},
+		}
+	},
 };
 
 export const PATHS = {
@@ -298,10 +374,9 @@ export const PATHS = {
 		id: 5,
 		topic: "web-exploits",
 		subtopics: [
-			"wordlists",
-			"intro-to-hashcat",
-			"what-are-hashes",
-			"cracking-hashes",
+			"introduction",
+			"basic-techniques",
+			"deep-dive",
 		],
 	},
 };
@@ -370,10 +445,9 @@ export const SECTIONS = {
 		author: "Auric",
 		image: logo,
 		subtopics: [
-			"Wordlists",
-			"Intro to Hashcat",
-			"What are Hashes",
-			"Cracking Hashes",
+			"Introduction",
+			"Basic Techniques",
+			"Deep Dive into Dev Tools",
 		],
 		paths: PATHS.Auric,
 		content: SECTION_CONTENT.Auric,

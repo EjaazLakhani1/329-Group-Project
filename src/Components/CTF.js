@@ -52,7 +52,7 @@ const CTF = ({ name }) => {
         {map ((question) => (
           <>
             <h2>Question {question.index}</h2>
-            <h4 className={classes.para}>{question.question}{question.hasLink && <a href={question.link}>File</a>}</h4>
+            <h4 className={classes.para}>{question.question}{question.hasLink && <a href={question.link} target="_blank">Here</a>}</h4>
             <IndQuestion questionAnswer={question.answer} />
           </>
         ), CTF_QUESTIONS[author])}
