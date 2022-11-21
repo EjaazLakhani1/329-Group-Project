@@ -18,6 +18,13 @@ import {
   basic,
   deep
 } from "../Auric/lessonContent"
+import {
+  introPage,
+  socialEngineering,
+  howItWorks,
+  commonAttacks,
+  beLess
+} from "../Habiba/lessonContent"
 
 export const CTF_QUESTIONS = {
 	Ejaaz: {
@@ -104,6 +111,20 @@ export const CTF_QUESTIONS = {
       answer: "True",
 		}
 	},
+  Habiba: {
+		question1: {
+			index: 1,
+			question:
+				"You receive an email with the subject title “Congratulations!” and you open it to find out that you have won an iPhone. How exciting! You notice a few typos in the email but it contains the Apple logo which makes you assume that Apple sent you that email. Now, all you have to do is click the link to receive your prize. Should you proceed?",
+			answer: "no",
+		},
+		question2: {
+			index: 2,
+			question:
+				"Now, imagine this scenario, it is 10pm on a Sunday and you are at home, getting ready for bed. All of a sudden, your phone rings and you pick up. The caller introduces himself. He is calling from your bank regarding a missed payment and you are alerted that if you do not make that payment over the phone, there will be a warrant sent out for your arrest. Is the caller an employee at your bank?",
+			answer: "no",
+		},
+	},
 };
 
 export const SECTION_CONTENT = {
@@ -113,7 +134,7 @@ export const SECTION_CONTENT = {
 	},
 	Habiba: {
 		id: 2,
-		contents: [wordlists, wordlists, wordlists, wordlists],
+		contents: [introPage, socialEngineering, howItWorks, commonAttacks, beLess],
 	},
 	Colton: {
 		id: 3,
@@ -193,7 +214,58 @@ export const LESSON_QUESTIONS = {
 			},
 		},
 	},
-	Habiba: {},
+	Habiba: {
+		"What is Social Engineering?": {
+			question1: {
+				index: 1,
+				question:
+					"What is NOT an explanation of social engineering? (Enter the corresponding letter in the text field below) \n \n a) Exploiting human error \n \n b) Using one’s extreme emotions against them \n \n c) Organising society in a certain way \n \n d) Act of manipulating humans",
+				answer: "c",
+			},
+			question2: {
+				index: 2,
+				question:
+					"What is an example of an extreme emotion mentioned above?",
+				answer: "happiness",
+			},
+		},
+		"How does social engineering work?": {
+			question1: {
+				index: 1,
+				question:
+					"What is more important in carrying out a social engineering attack: researching your victim or learning how to hack? (Answer can be “research” or “hacking”)",
+				answer: "research",
+			},
+			question2: {
+				index: 2,
+				question:
+					"A social engineer will manipulate their victim into experiencing heightened emotions in order to _____ their judgement.",
+				answer: "cloud",
+			},
+		},
+    "Common Social Engineering Attacks": {
+			question1: {
+				index: 1,
+				question:
+					"What is the term for the form of social engineering that uses the victim’s natural curiosity against them?",
+				answer: "baiting",
+			},
+			question2: {
+				index: 2,
+				question:
+					"What is NOT an example of social engineering? (Enter the corresponding letter in the text field below)\n \n a) USB bait\n \n b) Spam call \n \n c) Phishing email \n \n d) None of the above",
+				answer: "d",
+			},
+		},
+    "How can you be less susceptible to a social engineering attack?": {
+			question1: {
+				index: 1,
+				question:
+					"Which of the following is NOT something you should do to be less susceptible to a social engineering attack? (Enter the corresponding letter in the text field below)\n \n a) Researching the source \n \n b) Sharing information that may seem unimportant with strangers \n \n c) Educating yourself on social engineering \n \n d) Asking yourself questions",
+				answer: "b",
+			},
+		},
+	},
 	Dante: {
 		"Tools & Terminal Commands & Information to get started": {
 			question1: {
@@ -343,10 +415,11 @@ export const PATHS = {
 		id: 2,
 		topic: "social-engineering",
 		subtopics: [
-			"wordlists",
-			"intro-to-hashcat",
-			"what-are-hashes",
-			"cracking-hashes",
+			"introduction",
+			"what-is-social-engineering",
+			"how-social-engineering-works",
+			"common-social-engineering-attacks",
+      "become-less-suceptible"
 		],
 	},
 	Dante: {
@@ -354,9 +427,9 @@ export const PATHS = {
 		topic: "reverse-engineering",
 		subtopics: [
 			"ToolsTerminalCommandsInformation-to-get-started",
-			"What-is-and-why-use-reverse-engineering",
-			"How-to-protect-source-code-against-attacks-and-what-could-happen-if-you-don't-protect-it",
-			"Intro-to-assembly",
+			"what-is-and-why-use-reverse-engineering",
+			"how-to-protect-source-code-against-attacks-and-what-could-happen-if-you-don't-protect-it",
+			"intro-to-assembly",
 		],
 	},
 	Colton: {
@@ -402,10 +475,11 @@ export const SECTIONS = {
 		author: "Habiba",
 		image: logo,
 		subtopics: [
-			"Wordlists",
-			"Intro to Hashcat",
-			"What are Hashes",
-			"Cracking Hashes",
+			"Introduction",
+			"What is Social Engineering?",
+			"How does social engineering work?",
+			"Common Social Engineering Attacks",
+      "How can you be less susceptible to a social engineering attack?"
 		],
 		paths: PATHS.Habiba,
 		content: SECTION_CONTENT.Habiba,
