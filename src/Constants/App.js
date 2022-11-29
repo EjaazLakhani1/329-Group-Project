@@ -96,7 +96,7 @@ export const CTF_QUESTIONS = {
 				"Find the flag in this website. \n ",
 			answer: "S0RC3_0F_A11_3V1L",
       hasLink: true,
-      link: 'http://localhost:3000/Auric/Website3/home.html'
+      link: 'http://localhost:3000/Auric/Website3/index.html'
 		},
 	},
   Colton: {
@@ -225,7 +225,7 @@ export const LESSON_QUESTIONS = {
 			question2: {
 				index: 2,
 				question:
-					"What is an example of an extreme emotion mentioned above?",
+					"What is the first example of extreme emotion mentioned above?",
 				answer: "happiness",
 			},
 		},
