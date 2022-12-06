@@ -1,0 +1,122 @@
+Wordlists Section
+
+Question 1
+
+1. go to the kaggle link provided in lesson https://www.kaggle.com/datasets/wjburns/common-password-list-rockyoutxt
+
+2. scroll down to find answer of 14,341,564
+
+Question 2
+
+1. go to github link provided in Question (https://github.com/danielmiessler/SecLists/tree/master/Passwords)
+
+2. scroll down to find answer dutch_passwordlist.txt
+
+-------
+
+What are hashes Section
+
+Question 1
+
+1. use hashid to fimd the hash type
+
+2. run hashid 'AK1AAECAwQFBgcICRARNGqgeC3is8gv2xWWRony9NJnDgE='
+
+3. Answer is FortiGate (FortiOS)
+
+Question 2
+
+1. Go to link provided in section (https://hashcat.net/wiki/doku.php?id=example_hashes)
+
+2. Use find (ctrl/cmd + F) to search on page 
+
+3. Copy and paste hash in
+
+4. Answer is 6000
+
+----------
+
+Cracking Hashes Section
+
+Question 1
+
+1. we are using hashcat
+
+2. dictionary attack has mode 0
+
+3. Using link from previous section we search for md5 and find it has mode 0
+
+4. we can constrcut our answer to be hashcat -a 0 -m 0 hash.txt rockyou.txt
+
+Question 2
+
+1. we are using hashcat
+
+2. combination attack has mode 1
+
+3. Using link from previous section we search for SHA1 and find it has mode 100
+
+4. we can constrcut our answer to be hashcat -a 1 -m 100 hash.txt wordlist1.txt words2.txt
+
+Question 3
+
+1. we are using hashcat
+
+2. mask attack has mode 3
+
+3. Using link from previous section we search for md5 and find it has mode 0
+
+4. uppercase is ?u lowercase is ?l a digit is ?d and special char is ?s
+
+5. we can constrcut our answer to be hashcat -a 3 -m 0 hash.txt ?u?l?l?l?u?d?d?d0?s
+
+
+CTF Questions
+
+Question 1
+
+1. we are using hashcat
+
+2. dictionary attack has mode 0
+
+3. Using hashid -m we find our target hash to use mode 1700
+
+4. save our hash in hash1.txt
+
+5. we look on the seclists page and find a wordlist from 2020 called 2020-200_most_used_passwords.txt and download/save that locally
+
+6. run the command hashcat -a 0 -m 1700 hash1.txt 2020-200_most_used_passwords.txt
+
+7. hashcat reveals our answer to be sunshine
+
+Question 2
+
+1. we are using hashcat
+
+2. combination attack has mode 1
+
+3. Using hashid -m we find our target hash to use mode 0
+
+4. save our hash in hash2.txt
+
+5. we save our given words into two wordlists file1.txt and file2.txt
+
+6. run the command hashcat -a 1 -m 0 hash2.txt file1.txt file2.txt
+
+7. hashcat reveals our answer to be groupproject
+
+Question3
+
+1. we are using hashcat
+
+2. mask attack has mode 3
+
+3. Using hashid -m we find our target hash to use mode 0
+
+4. save our hash in hash3.txt
+
+5. ?H represent an upper case letter or number which was found using the link provided in the last section (https://hashcat.net/wiki/doku.php?id=mask_attack) ?d represents a digit ?u is an uppercase letter and ?l is a lower case letter
+
+6. run the command hashcat -a 3 -m 0 hash3.txt '?HDave3?d?d?d?l?u?l?u' 
+
+7. hashcat reveals our answer to be EDave3579oKsB

@@ -1,0 +1,77 @@
+Introduction Page:
+Have you ever answered a spam call? Have you ever been sent an email with the subject title “Congratulations! You won!” without signing up for anything? Has an ad ever popped up claiming that all you have to do is click a link to win an iPhone? If you answered yes to any of these questions, then you were susceptible to a social engineering attack.
+
+Keep reading to grasp a better understanding of what social engineering is, how it works and how to prevent its attacks!
+
+What is Social Engineering?
+Social engineering might sound like a very complex term which would make us assume that it has got nothing to do with us. However, the fact is almost every single one of us has or has almost been a victim of a social engineering attack. In technical terms, social engineering is the act of manipulating humans into giving up confidential information, spreading malware viruses, and more. In simpler terms, social engineering exploits human error. These hackers may not be the most skilled with computers and coding but they understand how humans work. They bait them into thinking that they have won something or that they are going to jail if the individual does not provide the hacker with the information they ask for. In most cases, they use one’s extreme happiness and excitement, or their fear and worry against them. What their tactics wish to accomplish is to have these humans’ judgement be clouded by their extreme emotions.
+
+You might have already made the assumption that social engineering attacks pose a huge threat to information security and privacy, which puts you on the right track.
+Social engineering threatens our information security as well as our privacy. Social engineering attacks are executed with the intention of gaining access to our confidential information which makes our information no longer secure and invades our privacy. Therefore, in order to keep our information secure and maintain our privacy, we have to understand how social engineering attacks are carried out and how to avoid falling victim to them.
+
+In the next section, we will discuss how social engineering works and how social engineers get their victims to give up their information.
+
+Question 1:
+What is NOT an explanation of social engineering? (Enter the corresponding letter in the text field below)
+Exploiting human error
+Using one’s extreme emotions against them
+Organising society in a certain way
+Act of manipulating humans
+Answer 1: c
+
+Question 2:
+What is an example of an extreme emotion mentioned above?
+Answer 2: “happiness”, “excitement”, “fear”, or “worry”
+
+How does social engineering work?
+Social engineering is a very interesting and subtle way of putting someone’s privacy at risk because attackers do not force their victims to give away information rather they encourage them to do so. In order for an attacker to successfully gain the information they need or inconvenience their victim however they see fit, they have to pick a target audience and research things about them such as how they are motivated or what matters to them. After the attacker has done their research, they can use what they have learned to gain their victim’s trust, putting them in a vulnerable position. Then, they get their victim to do what they want such as give up information, click on a URL, etc. . Another thing to note that was previously mentioned is how the attacker uses the victim’s emotions to cloud their judgement. They tell them emotion inducing information in order to manipulate them. For example, telling the victim that they have won a draw or that there is a warrant out for their arrest. Although those two examples bring about very different emotions, they are both more intense than usual so victims tend to act in the spur of the moment.
+
+Question 1:
+What is more important in carrying out a social engineering attack: researching your victim or learning how to hack? (Answer can be “research” or “hacking”)
+Answer 1: research
+
+Question 2:
+A social engineer will manipulate their victim into experiencing heightened emotions in order to _____ their judgement.
+Answer 2: cloud
+
+Common Social Engineering Attacks:
+Now that we have an understanding of how social engineering works, we will look at the two most common forms of attack:
+Phishing is when the attacker gets their victim to give up information by pretending to be a trusted person. This includes spam calls, emails, text messages. For example, a common one is receiving a call from an attacker claiming that they work at the Canada Revenue Agency, they tell the victim that they have committed tax fraud and that the police are on their way to arrest them if they do not provide their credit card information.
+Baiting attackers use an individual’s curiosity against them. This is usually done by telling them that they have won something whether it be through email or in person. Another example of baiting is leaving a USB with a virus on it somewhere public and waiting for a curious individual to take the bait.
+
+Question 1:
+What is the term for the form of social engineering that uses the victim’s natural curiosity against them?
+Answer 1: baiting
+
+Question 2:
+What is NOT an example of social engineering? (Enter the corresponding letter in the text field below)
+USB bait
+Spam call
+Phishing email
+None of the above
+Answer 2: d
+
+How can you be less susceptible to a social engineering attack?
+In the past sections, we covered everything you need to know about social engineering. In this section, you will learn how to prevent these attacks from happening to you. Here are some tips & tricks on how to avoid being the victim of a social engineering attack:
+EDUCATE yourself on the topic (which you have already done)
+ASK yourself rational questions, some being:
+Is it a reliable source? Can you verify it?
+Is it too good to be true?
+How valuable is the information that is being asked of me?
+RESEARCH the source to determine its legitimacy
+Do NOT give up information that could be of use to them, like your phone number
+AVOID answering calls and emails from unverified or unrecognised contacts
+
+Question 1:
+Which of the following is NOT something you should do to be less susceptible to a social engineering attack? (Enter the corresponding letter in the text field below)
+Researching the source
+Sharing information that may seem unimportant with strangers
+Educating yourself on social engineering
+Asking yourself questions
+Answer 1: b
+
+Congratulations! You are now an expert on social engineering.
+
+CTF/More questions:
+You receive an email with the subject title “Congratulations!” and you open it to find out that you have won an iPhone. How exciting! You notice a few typos in the email but it contains the Apple logo which makes you assume that Apple sent you that email. Now, all you have to do is click the link to receive your prize. Should you proceed? (Answer: no)
+Now, imagine this scenario, it is 10pm on a Sunday and you are at home, getting ready for bed. All of a sudden, your phone rings and you pick up. The caller introduces himself. He is calling from your bank regarding a missed payment and you are alerted that if you do not make that payment over the phone, there will be a warrant sent out for your arrest. Is the caller an employee at your bank? (Answer: no)

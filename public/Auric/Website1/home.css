@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.home{
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/sky.png);
+    background-size: cover;
+}
+
+.navbar h2{
+    background-color: black;
+    text-align: center;
+    font-size: 50px;
+}
+
+.info-box{
+    color:white;
+    text-align: center;
+    position: absolute;
+    margin:auto;
+    width:50%;
+    left:25%;
+    top:15%;
+    padding:10px;
+    border: 11px groove #1C6EA4;
+}
+
+.button a{
+    color: rgb(255, 255, 255); font-size: 16px; line-height: 16px; padding: 10px; border-radius: 12px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 11px groove rgb(28, 110, 164); display: inline-block;
+    position: absolute;
+    display: inline-block;
+    top:90%;
+}
+    .button a:hover {
+    background: #1C6EA4; }
+    .button a:active {
+    background: #144E75; }

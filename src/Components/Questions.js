@@ -10,6 +10,9 @@ const useStyles = makeStyles({
     marginLeft: 16,
     marginBottom: 16,
   },
+  question: {
+    whiteSpace: 'break-spaces'
+  },
 })
 
 const Questions = ({
@@ -28,7 +31,7 @@ const Questions = ({
       {map ((question) => (
         <>
           <h2>Question {question.index}</h2>
-          <h4>{question.question}</h4>
+          <h4 className={classes.question}>{question.question}</h4>
           <IndQuestion questionAnswer={question.answer} />
         </>
       ), LESSON_QUESTIONS[author][subtopic] )}

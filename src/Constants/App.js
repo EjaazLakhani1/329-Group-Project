@@ -6,6 +6,25 @@ import {
 	introToAssembly,
 	getStartedInformation,
 } from "../Dante/lessonContent";
+import {
+  intro,
+  basics,
+  homeNetwork,
+  publicWifi,
+  webBrowsing
+} from "../Colton/lessonContent"
+import {
+  introAuric,
+  basic,
+  deep
+} from "../Auric/lessonContent"
+import {
+  introPage,
+  socialEngineering,
+  howItWorks,
+  commonAttacks,
+  beLess
+} from "../Habiba/lessonContent"
 
 export const CTF_QUESTIONS = {
 	Ejaaz: {
@@ -54,6 +73,58 @@ export const CTF_QUESTIONS = {
       link: 'http://localhost:3000/Dante/vault'
 		},
 	},
+  Auric: {
+		question1: {
+			index: 1,
+			question:
+				"Find the flag in this website. \n",
+			answer: "UnsafeWebsite",
+      hasLink: true,
+      link: 'http://localhost:3000/Auric/Website1/home.html'
+		},
+		question2: {
+			index: 2,
+			question:
+				"Find the flag in this website.\n",
+			answer: "N1C3_S6R1PT1N6",
+      hasLink: true,
+      link: 'http://localhost:3000/Auric/Website2/home.html'
+		},
+		question3: {
+			index: 3,
+			question:
+				"Find the flag in this website. \n ",
+			answer: "S0RC3_0F_A11_3V1L",
+      hasLink: true,
+      link: 'http://localhost:3000/Auric/Website3/index.html'
+		},
+	},
+  Colton: {
+		question1: {
+			index: 1,
+			question: "The latest security protocol for wireless security is WPA_?",
+      answer: "3",
+		},
+		question2: {
+			index: 2,
+			question: "A virtual machine can be used to remove the worry of your internet browsing affecting the hardware of your device ",
+      answer: "True",
+		}
+	},
+  Habiba: {
+		question1: {
+			index: 1,
+			question:
+				"You receive an email with the subject title “Congratulations!” and you open it to find out that you have won an iPhone. How exciting! You notice a few typos in the email but it contains the Apple logo which makes you assume that Apple sent you that email. Now, all you have to do is click the link to receive your prize. Should you proceed?",
+			answer: "no",
+		},
+		question2: {
+			index: 2,
+			question:
+				"Now, imagine this scenario, it is 10pm on a Sunday and you are at home, getting ready for bed. All of a sudden, your phone rings and you pick up. The caller introduces himself. He is calling from your bank regarding a missed payment and you are alerted that if you do not make that payment over the phone, there will be a warrant sent out for your arrest. Is the caller an employee at your bank?",
+			answer: "no",
+		},
+	},
 };
 
 export const SECTION_CONTENT = {
@@ -63,11 +134,17 @@ export const SECTION_CONTENT = {
 	},
 	Habiba: {
 		id: 2,
-		contents: [wordlists, wordlists, wordlists, wordlists],
+		contents: [introPage, socialEngineering, howItWorks, commonAttacks, beLess],
 	},
 	Colton: {
 		id: 3,
-		contents: [wordlists, wordlists, wordlists, wordlists],
+		contents: [
+      intro,
+      basics,
+      homeNetwork,
+      publicWifi,
+      webBrowsing
+    ],
 	},
 	Dante: {
 		id: 4,
@@ -80,7 +157,7 @@ export const SECTION_CONTENT = {
 	},
 	Auric: {
 		id: 5,
-		contents: [wordlists, wordlists, wordlists, wordlists],
+		contents: [introAuric, basic, deep],
 	},
 };
 
@@ -137,7 +214,58 @@ export const LESSON_QUESTIONS = {
 			},
 		},
 	},
-	Habiba: {},
+	Habiba: {
+		"What is Social Engineering?": {
+			question1: {
+				index: 1,
+				question:
+					"What is NOT an explanation of social engineering? (Enter the corresponding letter in the text field below) \n \n a) Exploiting human error \n \n b) Using one’s extreme emotions against them \n \n c) Organising society in a certain way \n \n d) Act of manipulating humans",
+				answer: "c",
+			},
+			question2: {
+				index: 2,
+				question:
+					"What is the first example of extreme emotion mentioned above?",
+				answer: "happiness",
+			},
+		},
+		"How does social engineering work?": {
+			question1: {
+				index: 1,
+				question:
+					"What is more important in carrying out a social engineering attack: researching your victim or learning how to hack? (Answer can be “research” or “hacking”)",
+				answer: "research",
+			},
+			question2: {
+				index: 2,
+				question:
+					"A social engineer will manipulate their victim into experiencing heightened emotions in order to _____ their judgement.",
+				answer: "cloud",
+			},
+		},
+    "Common Social Engineering Attacks": {
+			question1: {
+				index: 1,
+				question:
+					"What is the term for the form of social engineering that uses the victim’s natural curiosity against them?",
+				answer: "baiting",
+			},
+			question2: {
+				index: 2,
+				question:
+					"What is NOT an example of social engineering? (Enter the corresponding letter in the text field below)\n \n a) USB bait\n \n b) Spam call \n \n c) Phishing email \n \n d) None of the above",
+				answer: "d",
+			},
+		},
+    "How can you be less susceptible to a social engineering attack?": {
+			question1: {
+				index: 1,
+				question:
+					"Which of the following is NOT something you should do to be less susceptible to a social engineering attack? (Enter the corresponding letter in the text field below)\n \n a) Researching the source \n \n b) Sharing information that may seem unimportant with strangers \n \n c) Educating yourself on social engineering \n \n d) Asking yourself questions",
+				answer: "b",
+			},
+		},
+	},
 	Dante: {
 		"Tools & Terminal Commands & Information to get started": {
 			question1: {
@@ -168,8 +296,108 @@ export const LESSON_QUESTIONS = {
 			},
 		},
 	},
-	Colton: {},
-	Auric: {},
+	Colton: {
+		"Basics on the internet": {
+			question1: {
+				index: 1,
+				question:
+					"Which protocol for transferring information on the internet allows for the fastest speed of getting the required data?",
+				answer: "UDP",
+			},
+			question2: {
+				index: 2,
+				question:
+					"What does ISP stand for?",
+				answer: "Internet Service Provider",
+			},
+		},
+		"Home network vulnerabilities": {
+			question1: {
+				index: 1,
+				question:
+					"If your router doesn’t automatically update its firmware, how often should you be updating it yourself?",
+				answer: "monthly",
+			},
+			question2: {
+				index: 2,
+				question:
+					"True or False: Your router comes preconfigured with a strong password for both the wifi network and its router settings",
+				answer: "False",
+			},
+		},
+    "Exploits on Public Wifi": {
+			question1: {
+				index: 1,
+				question:
+					" ____ is a type of attack where the attacker gets in between your device and its communication to the internet, allowing them to access the data being transferred (4 letter acronym)",
+				answer: "MITM",
+			},
+			question2: {
+				index: 2,
+				question:
+					"What is the secure version of HTTP?",
+				answer: "HTTPS",
+			},
+		},
+    "Security for web browsing": {
+			question1: {
+				index: 1,
+				question:
+					"Two easy techniques to secure your online presence include installing security oriented browser ____ and configuring browser ____ (alphabetical & separate them with a comma)",
+				answer: "extensions, settings",
+			},
+			question2: {
+				index: 2,
+				question:
+					"DDoS” stands for “distributed _____-of-service",
+				answer: "denial",
+			}
+		},
+	},
+	Auric: {
+		"Introduction": {
+			question1: {
+				index: 1,
+				question:
+					"What Frontend language is used for animations?",
+				answer: "Javascript",
+			},
+			question2: {
+				index: 2,
+				question:
+					"What are three examples of sensitive information that websites can conatin? (alphabetic, comme seperated)",
+				answer: "addresses, names, phone numbers",
+			},
+		},
+		"Basic Techniques": {
+			question1: {
+				index: 1,
+				question:
+					"Which technique would be most useful for attempting to find a hidden file with passwords in it?",
+				answer: "path traversals",
+			},
+			question2: {
+				index: 2,
+				question:
+					"How should knowledge about these techniques be used? (Ethically or non-Ethically?).",
+				answer: "Ethically",
+      }
+		},
+    "Deep Dive into Dev Tools": {
+			question1: {
+				index: 1,
+				question:
+					"Which Developer tool section should be looked at to find exploitable files?",
+				answer: "sources",
+			},
+			question2: {
+				index: 2,
+				question:
+					"Which Browser can be used for this technique? (enter letter)\na) Google Chrome\nb) Microsoft Edge\nc) Firefox**\nd) All of the above**",
+				answer: "d",
+			},
+		}
+	},
 };
 
 export const PATHS = {
@@ -187,10 +415,11 @@ export const PATHS = {
 		id: 2,
 		topic: "social-engineering",
 		subtopics: [
-			"wordlists",
-			"intro-to-hashcat",
-			"what-are-hashes",
-			"cracking-hashes",
+			"introduction",
+			"what-is-social-engineering",
+			"how-social-engineering-works",
+			"common-social-engineering-attacks",
+      "become-less-suceptible"
 		],
 	},
 	Dante: {
@@ -198,29 +427,29 @@ export const PATHS = {
 		topic: "reverse-engineering",
 		subtopics: [
 			"ToolsTerminalCommandsInformation-to-get-started",
-			"What-is-and-why-use-reverse-engineering",
-			"How-to-protect-source-code-against-attacks-and-what-could-happen-if-you-don't-protect-it",
-			"Intro-to-assembly",
+			"what-is-and-why-use-reverse-engineering",
+			"how-to-protect-source-code-against-attacks-and-what-could-happen-if-you-don't-protect-it",
+			"intro-to-assembly",
 		],
 	},
 	Colton: {
 		id: 4,
 		topic: "how-to-protect-yourself-on-the-internet",
 		subtopics: [
-			"wordlists",
-			"intro-to-hashcat",
-			"what-are-hashes",
-			"cracking-hashes",
+			"intro",
+			"basics-on-the-internet",
+			"home-network-vulnerabilities",
+			"exploits-on-public-wifi",
+      "security-for-web-browsing"
 		],
 	},
 	Auric: {
 		id: 5,
 		topic: "web-exploits",
 		subtopics: [
-			"wordlists",
-			"intro-to-hashcat",
-			"what-are-hashes",
-			"cracking-hashes",
+			"introduction",
+			"basic-techniques",
+			"deep-dive",
 		],
 	},
 };
@@ -246,10 +475,11 @@ export const SECTIONS = {
 		author: "Habiba",
 		image: logo,
 		subtopics: [
-			"Wordlists",
-			"Intro to Hashcat",
-			"What are Hashes",
-			"Cracking Hashes",
+			"Introduction",
+			"What is Social Engineering?",
+			"How does social engineering work?",
+			"Common Social Engineering Attacks",
+      "How can you be less susceptible to a social engineering attack?"
 		],
 		paths: PATHS.Habiba,
 		content: SECTION_CONTENT.Habiba,
@@ -274,10 +504,11 @@ export const SECTIONS = {
 		author: "Colton",
 		image: logo,
 		subtopics: [
-			"Wordlists",
-			"Intro to Hashcat",
-			"What are Hashes",
-			"Cracking Hashes",
+			"Intro",
+			"Basics on the internet",
+			"Home network vulnerabilities",
+      "Exploits on Public Wifi",
+			"Security for web browsing",
 		],
 		paths: PATHS.Colton,
 		content: SECTION_CONTENT.Colton,
@@ -288,10 +519,9 @@ export const SECTIONS = {
 		author: "Auric",
 		image: logo,
 		subtopics: [
-			"Wordlists",
-			"Intro to Hashcat",
-			"What are Hashes",
-			"Cracking Hashes",
+			"Introduction",
+			"Basic Techniques",
+			"Deep Dive into Dev Tools",
 		],
 		paths: PATHS.Auric,
 		content: SECTION_CONTENT.Auric,
