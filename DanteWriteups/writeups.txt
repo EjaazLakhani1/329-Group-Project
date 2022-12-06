@@ -1,0 +1,53 @@
+Tools & Terminal Commands & Information to get started Section
+
+Question 1
+
+- We know from the example that chmod +<permission> adds the permission to the files
+- Therefore to remove a permission we will use chmod -<permission>
+- So to remove reading from a file it will be "chmod -r <filename>"
+
+Question 2
+
+- Using the link provided https://www.ibm.com/docs/en/aix/7.2?topic=s-strings-command and look at Example 2.
+- Use the same format, we get the answer of "strings -6 <filename>"
+
+
+Intro to assembly Section
+
+Question 1
+
+Looking at Figure 1:
+    - Move stores a value into the register thus at line 1 ebx = 6 and on line 2 ecx = 4
+    - Add adds two registers together thus "add ebx, ecx" does ebx = ebx + ecx so at line 3 ebx = 6 + 4 and ebx = 10
+    - On line 4 eax = 2
+    - sub subtracts two registers together thus "sub ebx, eax" does ebx = ebx - eax so at line 5 ebx = 10 + 2 and ebx = 8
+    - So the final answer is 8
+
+
+Question 2
+
+Looking at Figure 2:
+    - Move stores a value into the register thus at line 1 ebx = 4 and on line 2 ecx = 1
+    - cmp compares ebx and ecx, since the next line is jg L2 using the file provided we can
+    see that jg checks if ebx > ecx. Since jg checks if ebx > ecx and this is true because
+    4 > 1 then the code jumps to L2 and we continue at "sub ebx, ecx"
+    - sub subtracts two registers together thus "sub ebx, ecx" does ebx = ebx - ecx so at line 5 ebx = 4 - 1 and ebx = 3
+    - Move stores a value into the register thus at the final line eax = ebx, thus eax = 3
+
+
+CTF QUESTIONS
+
+Question 1
+- All we have to do to find the flag is look at the source code of the final to find the flag
+"cpscCTF{4lw4y5_ch3ck_50urc3_c0d3}"
+
+Question 2
+- We can see that the secretHash has a set of {}, thus this must be the flag encrypted
+- Changing the function being called at the bottom of the code from "makeRandomPassword()" to "decode(secretHash)"
+and then running the file will decrypt the hash and give the flag which is "cpscCTF{d3c0d1n6_1s_fun}"
+
+Question 3
+- Open the executable file with Cutter with "cutter vault" in the terminal
+- Find the bank function in the file
+- There will be a bunch of 1 letter strings one line after another, which if you connect makes the word "f4ncy_pa5sword"
+- Surround this word with cpscCTF{} and you get cpscCTF{f4ncy_pa5sword} as the flag
