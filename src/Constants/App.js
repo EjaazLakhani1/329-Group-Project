@@ -316,7 +316,7 @@ export const LESSON_QUESTIONS = {
 				index: 1,
 				question:
 					"If your router doesn’t automatically update its firmware, how often should you be updating it yourself?",
-				answer: "monthly",
+				answer: "3-5 years",
 			},
 			question2: {
 				index: 2,
