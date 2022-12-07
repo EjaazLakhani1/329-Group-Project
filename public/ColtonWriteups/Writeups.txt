@@ -1,0 +1,29 @@
+
+    - Basics on the internet -
+
+Q1 answer = UDP
+Q2 answer = Internet Service Provider
+
+--------------------------------------------
+--------------------------------------------
+
+    - Home Network Vulnerabilities -
+
+Q1 answer = 3-5 years
+Q2 answer = False
+
+--------------------------------------------
+--------------------------------------------
+
+    - Exploits on Public Wifi -
+
+Q1 answer = MITM
+Q2 answer = HTTPS
+
+--------------------------------------------
+--------------------------------------------
+
+    - CTF Questions -
+
+Q1 answer = 3
+Q2 answer = True
