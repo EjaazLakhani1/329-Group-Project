@@ -1,0 +1,98 @@
+Introduction on Web Exploitation Section
+
+Question 1
+
+- Take a look at the first section where frontend and backend are discussed
+- See that three frontend tools are listed (Html, Css, Javascript)
+- See that HTML is used for text, and CSS is used for style 
+- Finally see that Javascript adds animations 
+- So the answer is Javascript
+
+
+Question 2
+
+- Recall that in the lesson sensitive informaiton was described as information that is private in nature
+- Look in third section that corresponds to dangers of vulnurable websites
+- See the part in that section that discusses sensitive information
+- Look at the three types of infomaiton in brackets "addresses, names, phone numbers"
+- These are your answers
+
+
+Basic Techniques of Web Exploitation Section
+
+Question 1
+
+- Look at the three different types of exploitation technique sections
+- Which section would allow us to find a hidden password
+- Neither Developer tools or brute force attacks explicitly talk about hidden files
+- Path Traversal section states that you can use this technique to find hidden directories with sensitive files/folders
+- So "Path Traversals" is the correct answer
+
+
+Question 2
+
+- This question is more based off of general knowledge about this project entirely
+- All the information learned in this section and the other sections is potentially dangerous if used maliciously
+- So in which way should you use what you have learned?
+- The answer is "Ethically"
+
+
+Deep Dive into Dev Tools Section
+
+Question 1
+
+- By looking in the last section (What to look for), you can see that the main focuses are the "Elements" and "Sources" Tabs
+- The elements tab holds the html code for the current webpage (so it cant be here)
+- What does the Sources tab hold?
+- It holds all of the files that were used to make the webpage
+- This is the section we can find exploitable files infomaiton
+- So the answer is "Sources"
+
+Question 2
+
+- This question is a simple reading question (sort of a trick question)
+- The setup part of this section holds the answer
+- Even though "Chrome" is put in brackets the section clearly states that any web browser can be used
+- So "Google Chrome", "Microsoft Edge", and "Firefox" are all true
+- Therefore "d" (All of the above), is the answer
+
+
+
+
+
+CTF QUESTIONS
+
+Question 1
+
+- Solution comes directly from lesson notes
+- Specifically when its stated that sometimes the creator leaves vulnurable shortcuts for their convience that they forget to remove
+- The paragraph in the middle of the page is the creator stating that they made a page with their password 
+- Looking in the bottom left a password labeled "Unfinished page" is seen
+- When clicked, you are redirected to a webpage with a obviously clickable button titled "Whats my password again?"
+- Once this button is clicked the flag appears in a notification (only include the text after “flag” to correctly answer the questions)
+- flag is {flag}UnsafeWebsite
+
+
+Question 2
+
+- Solution comes from second section with multiple descriptions of web exploitation Techniques
+- The landing page of this website has a login form and some text and buttons on the left side of the screen
+- Attempting to type in any incorrect password displays an invalid username/password notification
+- It is needed to click on the right technique to breach a login (Brute Force in this situation)
+- After clicking on the Brute Force button, a notification appears with what was done as well as a username and password
+- Typing these credentials into the login form causes a notification with the flag to pop up
+- Note: Only copy texty inside {} to answer correctly
+- flag is flag{N1C3_S6R1PT1N6}
+
+
+Question 3
+
+- The homepage looks decivingly simple for this question
+- Developer tools needs to be used here to find the flag (as third section deep dives into this technique)
+- First it is needed to actually open the developer console (easiest way is to right click and select inspect)
+- Now the html code is visible and by reading this code and a comment message "Hopefully I remembered to remove my ‘secretCode’ from that one file" is visible
+- Now the user needs to go to the source tab (to find hidden file)
+- After searching a file named "special.js" can be found and after clicking a lot of code appears
+- Now it is needed to use the searchbar (at the bottom of window or ctrl + f) 
+- Searching for "flag" or "secretCode" (the keyword given) will direct you to the flag
+- flag is flag{S0RC3_0F_A11_3V1L}
