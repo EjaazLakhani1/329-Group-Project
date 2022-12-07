@@ -1,0 +1,31 @@
+Social Engineering Questions
+
+What is Social Engineering?
+Question 1:
+- Answer is "c" as can be determined in the first paragraph of this section
+Question 2:
+- Answer is "happiness" as stated in the first paragraph of this section
+
+How does social engineering work?
+Question 1:
+- Answer is "research" as specified in this lesson section
+Question 2:
+- Answer is "cloud" as stated in this lesson section
+
+Common Social Engineering Attacks
+Question 1:
+- Answer is "baiting" as explained in this lesson section
+Question 2:
+- Answer is "d" as all the other examples are mentioned in this lesson section
+
+How can you be less susceptible to a social engineering attack?
+Question 1:
+- Answer is "b" because the lesson states that personal information should not be shared
+
+
+Social Engineering CTFs
+
+Question 1:
+- Answer is "no" because there are typos in the email, it sounds too good to be true and the source was not investigated.
+Question 2:
+- Answer is "no" because the time of day that they are receiving the call is suspicious and the caller is trying to trigger a heightened feeling of fear and worry to cloud their judgment.
